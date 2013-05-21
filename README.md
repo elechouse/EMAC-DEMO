@@ -14,18 +14,20 @@ This library is develop by [Palliser](http://forum.arduino.cc/index.php?PHPSESSI
 
 ## How To ##
 
-Place 
-emac.h rstc.h ---->   ...\arduino-1.5.2-windows\arduino-1.5.2\hardware\arduino\sam\system\libsam\include   
-emac.c rstc.c ---->   ...\arduino-1.5.2-windows\arduino-1.5.2\hardware\arduino\sam\system\libsam\source respectively
+1. *Place*
+	emac.h rstc.h ---->   ...\arduino-1.5.2-windows\arduino-1.5.2\hardware\arduino\sam\system\libsam\include
+   
+	emac.c rstc.c ---->   ...\arduino-1.5.2-windows\arduino-1.5.2\hardware\arduino\sam\system\libsam\source *respectively*
 
-variant.cpp and variant.h ---> ...\arduino-1.5.2-windows\arduino-1.5.2\hardware\arduino\sam\variants\arduino_due_x, **arduino_due_x** folder alread have variant.cpp and variant.h, you need replace them, back up first. 
+	variant.cpp and variant.h ---> ...\arduino-1.5.2-windows\arduino-1.5.2\hardware\arduino\sam\variants\arduino\_due\_x, **arduino\_due\_x** folder alread have variant.cpp and variant.h, you need replace them, back up first. 
 
-*emac.h, rstc.h, emac.c, rstc.c, variant.cpp and variant.h are in CopyToAnotherDir*
+	*emac.h, rstc.h, emac.c, rstc.c, variant.cpp and variant.h are in CopyToAnotherDir*
 
-Copy **EMAC** folder to **$ArduionScketch/libraries**
+1. Copy **EMAC** folder to **$ArduionScketch/libraries**
 
-Connect **DUE Ethernet Module** with **TAIJIUINO Due Pro R2**, open example **Arduino\_Due\_EMAC\_Mod**, upload it to **TAIJIUINO Due Pro R2**, set your PC ip address to **192.168.0.3**, submask **255.255.255.0**, gate way **192.168.0.1**. 
+1. Connect **DUE Ethernet Module** with **TAIJIUINO Due Pro R2**, open example **Arduino\_Due\_EMAC\_Mod**, upload it to **TAIJIUINO Due Pro R2**. 
 
-Ping 192.168.0.2, and the result:
+1. Set your PC ip address to **192.168.0.3**, submask **255.255.255.0**, gate way **192.168.0.1**. Connect your PC and **DUE Ethernet Module** through network cable. Restart your **TaijiDue**, wait for the connection is established.
+	Ping 192.168.0.2, and the result:
 
-![ping result](./image/ping.jpg)
+	![ping result](./image/ping.jpg)
